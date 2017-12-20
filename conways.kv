@@ -1,0 +1,18 @@
+<MyLayout>:
+    mywidge: widget
+    orientation: 'horizontal'
+    MyWidget:
+        id: widget
+        size: (600, 600)
+        size_hint: (None, None)
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            text:'Generate Random'
+            on_press: root.random_gen()
+        Button:
+            text:'Start Generator'
+            on_press: root.generator()
+    
+<MyWidget>:
+    id: my_widget
